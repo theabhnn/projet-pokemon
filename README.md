@@ -54,7 +54,7 @@ Prérequis
 Étapes d'installation
 1. Cloner le projet :
 
-git clone https://github.com/ton-utilisateur/projet-pokemon.git
+git clone https://github.com/theabhnn/projet-pokemon.git
 cd projet-pokemon
 
 2. Créer et activer un environnement virtuel :
