@@ -1,1 +1,23 @@
-env/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.Python
+
+# Django
+db.sqlite3
+*.log
+media/
+
+# Environnement virtuel
+venv/
+.env
+
+# Éditeurs de code
+.vscode/
+.idea/
+*.swp
+.DS_Store

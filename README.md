@@ -45,9 +45,47 @@ projet-pokemon/
 ├── README.md                # Documentation du projet
 ├── requirements.txt         # Liste des dépendances Python nécessaires au projet
 
+# 3. Installation et configuration
+Prérequis
+- Python 3.x installé sur votre machine
+- pip pour installer les dépendances Python
+- Un éditeur de texte (comme Visual Studio Code)
 
+Étapes d'installation
+1. Cloner le projet :
 
-Clonez le projet depuis le dépôt Git :
-```bash
-git clone https://github.com/votreutilisateur/projet-pokemon.git
+git clone https://github.com/ton-utilisateur/projet-pokemon.git
 cd projet-pokemon
+
+2. Créer et activer un environnement virtuel :
+
+python3 -m venv env
+source env/bin/activate
+
+3. Installer les dépendances :
+
+pip install -r requirements.txt
+
+4. Appliquer les migrations de la base de données :
+
+python manage.py migrate
+
+5. Lancer le serveur de développement :
+
+python manage.py runserver
+
+# 4. Utilisation
+
+Pour accéder à l'interface d'administration de Django et ajouter des données comme des utilisateurs, des Pokémon et des compétences :
+
+ 1. Rendez-vous à l'adresse http://127.0.0.1:8000/admin/ <!-- c'est le serveur que vous avez lancé -->
+2. Connectez-vous avec le superutilisateur que vous avez créé.
+3. Ajoutez des entrées pour les utilisateurs, Pokémon, et compétences via l'interface d'administration.
+
+# 5. Endpoints de l'API
+
+L'API expose les 3 routes suivantes :
+
+/api/users/ : Gérer les utilisateurs. (http://127.0.0.1:8000/api/users/)
+/api/pokemons/ : Gérer les Pokémon. (http://127.0.0.1:8000/api/pokemons/)
+/api/competences/ : Gérer les compétences. (http://127.0.0.1:8000/api/competences/)
