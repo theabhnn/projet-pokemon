@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def home(request):
+    return HttpResponse("Bienvenue sur l'API Pokémon!")
 
 from rest_framework import viewsets
 from .models import User, Pokemon, Competence
