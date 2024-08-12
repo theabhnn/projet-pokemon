@@ -1,0 +1,15 @@
+asgiref==3.8.1
+Django==5.0.7
+djangorestframework==3.15.2
+gunicorn==22.0.0
+packaging==24.1
+sqlparse==0.5.1
+typing_extensions==4.12.2
+
+# asgiref : Utilisé pour la gestion des serveurs asynchrones en Django
+# Django : framework web utilisé pour construire le projet
+# djangorestframework : Nécessaire pour créer l'API RESTful
+# gunicorn : serveur HTTP Python utilisé pour déployer des applications Django en production
+# packaging : dépendance liée à la gestion des paquets Python
+# sqlparse : analyseur de SQL utilisé par Django pour certaines fonctionnalités liées à la base de données
+# typing_extensions : Fournit des extensions de typage
